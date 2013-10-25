@@ -2,20 +2,26 @@
 //  LJAppDelegate.m
 //  Logger
 //
-//  Created by Stephanie Yeung on 10/21/13.
+//  Created by Stephanie Yeung on 10/25/13.
 //  Copyright (c) 2013 yeung.steph. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import "LJAppDelegate.h"
 
 @implementation LJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"fOyYrndfhUTraiM1bLWJkG0So3J8fHthG1trMoYD"
+                  clientKey:@"cbZ23G15kK2dLR1N1urWJwyTXD1nwTRFULs1LHTi"];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

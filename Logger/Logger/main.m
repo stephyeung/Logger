@@ -2,7 +2,7 @@
 //  main.m
 //  Logger
 //
-//  Created by Stephanie Yeung on 10/21/13.
+//  Created by Stephanie Yeung on 10/25/13.
 //  Copyright (c) 2013 yeung.steph. All rights reserved.
 //
 
