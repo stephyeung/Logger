@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 yeung.steph. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import "LJDefaultViewController.h"
 
 @interface LJDefaultViewController ()
