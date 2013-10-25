@@ -21,7 +21,6 @@
 		555ACD23181ACACC00E2E030 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD0B181ACACC00E2E030 /* UIKit.framework */; };
 		555ACD2B181ACACC00E2E030 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 555ACD29181ACACC00E2E030 /* InfoPlist.strings */; };
 		555ACD2D181ACACC00E2E030 /* LoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 555ACD2C181ACACC00E2E030 /* LoggerTests.m */; };
-		555ACD37181AD2E000E2E030 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD36181AD2E000E2E030 /* Parse.framework */; };
 		555ACD39181AD34A00E2E030 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD38181AD34A00E2E030 /* AudioToolbox.framework */; };
 		555ACD3B181AD34E00E2E030 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD3A181AD34E00E2E030 /* CFNetwork.framework */; };
 		555ACD3D181AD35F00E2E030 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD3C181AD35F00E2E030 /* libz.1.1.3.dylib */; };
@@ -31,6 +30,7 @@
 		555ACD45181AD37800E2E030 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD44181AD37800E2E030 /* SystemConfiguration.framework */; };
 		555ACD47181AD49300E2E030 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD46181AD49300E2E030 /* CoreLocation.framework */; };
 		555ACD49181AD4A100E2E030 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */; };
+		555ACD4B181AE4BD00E2E030 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD4A181AE4BD00E2E030 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,6 @@
 		555ACD28181ACACC00E2E030 /* LoggerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoggerTests-Info.plist"; sourceTree = "<group>"; };
 		555ACD2A181ACACC00E2E030 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		555ACD2C181ACACC00E2E030 /* LoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerTests.m; sourceTree = "<group>"; };
-		555ACD36181AD2E000E2E030 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		555ACD38181AD34A00E2E030 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		555ACD3A181AD34E00E2E030 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		555ACD3C181AD35F00E2E030 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -73,6 +72,7 @@
 		555ACD44181AD37800E2E030 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		555ACD46181AD49300E2E030 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		555ACD4A181AE4BD00E2E030 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +86,12 @@
 				555ACD43181AD37100E2E030 /* StoreKit.framework in Frameworks */,
 				555ACD41181AD36B00E2E030 /* Security.framework in Frameworks */,
 				555ACD3F181AD36400E2E030 /* QuartzCore.framework in Frameworks */,
+				555ACD4B181AE4BD00E2E030 /* Parse.framework in Frameworks */,
 				555ACD3D181AD35F00E2E030 /* libz.1.1.3.dylib in Frameworks */,
 				555ACD0A181ACACC00E2E030 /* CoreGraphics.framework in Frameworks */,
 				555ACD3B181AD34E00E2E030 /* CFNetwork.framework in Frameworks */,
 				555ACD39181AD34A00E2E030 /* AudioToolbox.framework in Frameworks */,
 				555ACD0C181ACACC00E2E030 /* UIKit.framework in Frameworks */,
-				555ACD37181AD2E000E2E030 /* Parse.framework in Frameworks */,
 				555ACD08181ACACC00E2E030 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +131,7 @@
 		555ACD06181ACACC00E2E030 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				555ACD4A181AE4BD00E2E030 /* Parse.framework */,
 				555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */,
 				555ACD46181AD49300E2E030 /* CoreLocation.framework */,
 				555ACD44181AD37800E2E030 /* SystemConfiguration.framework */,
@@ -140,7 +141,6 @@
 				555ACD3C181AD35F00E2E030 /* libz.1.1.3.dylib */,
 				555ACD3A181AD34E00E2E030 /* CFNetwork.framework */,
 				555ACD38181AD34A00E2E030 /* AudioToolbox.framework */,
-				555ACD36181AD2E000E2E030 /* Parse.framework */,
 				555ACD07181ACACC00E2E030 /* Foundation.framework */,
 				555ACD09181ACACC00E2E030 /* CoreGraphics.framework */,
 				555ACD0B181ACACC00E2E030 /* UIKit.framework */,
@@ -412,6 +412,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F'13/98-222\\ iOS\\ Programming/Logger/Logger",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -429,6 +430,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F'13/98-222\\ iOS\\ Programming/Logger/Logger",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
