@@ -40,6 +40,5 @@
 
 - (IBAction)logHours:(id)sender {
 }
-- (IBAction)selectPartner:(id)sender {
-}
+
 @end
