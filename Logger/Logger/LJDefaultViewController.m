@@ -8,6 +8,7 @@
 
 #import <Parse/Parse.h>
 #import "LJDefaultViewController.h"
+#import "LJFriendViewController.h"
 
 @interface LJDefaultViewController () <PFLogInViewControllerDelegate,
                                         PFSignUpViewControllerDelegate>
@@ -38,12 +39,17 @@
 }
 
 - (IBAction)selectPartner:(id)sender {
+    LJFriendViewController *friendVC = [[LJFriendViewController alloc] initWithNibName:@"LJFriendViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:friendVC];
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (IBAction)logHours:(id)sender {
 }
 
-// LOGIN VIEW THINGS
+/*****************************************************************
+ *                          LOGIN VIEW                           *
+ *****************************************************************/
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];

@@ -31,6 +31,9 @@
 		555ACD47181AD49300E2E030 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD46181AD49300E2E030 /* CoreLocation.framework */; };
 		555ACD49181AD4A100E2E030 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */; };
 		556242E8181B5982002735DE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556242E7181B5982002735DE /* Parse.framework */; };
+		55B7227B181C51B400F9584B /* LJFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B72279181C51B400F9584B /* LJFriendViewController.m */; };
+		55B7227C181C51B400F9584B /* LJFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B7227A181C51B400F9584B /* LJFriendViewController.xib */; };
+		55B7227F181C52AB00F9584B /* LJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B7227E181C52AB00F9584B /* LJTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,11 @@
 		555ACD46181AD49300E2E030 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		556242E7181B5982002735DE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		55B72278181C51B400F9584B /* LJFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFriendViewController.h; sourceTree = "<group>"; };
+		55B72279181C51B400F9584B /* LJFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJFriendViewController.m; sourceTree = "<group>"; };
+		55B7227A181C51B400F9584B /* LJFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJFriendViewController.xib; sourceTree = "<group>"; };
+		55B7227D181C52AB00F9584B /* LJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTableViewCell.h; sourceTree = "<group>"; };
+		55B7227E181C52AB00F9584B /* LJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,11 @@
 				555ACD17181ACACC00E2E030 /* LJAppDelegate.m */,
 				2A3DF4B9181ADD1100723574 /* LJDefaultViewController.h */,
 				2A3DF4BA181ADD1100723574 /* LJDefaultViewController.m */,
+				55B7227D181C52AB00F9584B /* LJTableViewCell.h */,
+				55B7227E181C52AB00F9584B /* LJTableViewCell.m */,
+				55B72278181C51B400F9584B /* LJFriendViewController.h */,
+				55B72279181C51B400F9584B /* LJFriendViewController.m */,
+				55B7227A181C51B400F9584B /* LJFriendViewController.xib */,
 				2A3DF4BB181ADD1100723574 /* LJDefaultViewController.xib */,
 				555ACD19181ACACC00E2E030 /* Images.xcassets */,
 				555ACD0E181ACACC00E2E030 /* Supporting Files */,
@@ -268,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B7227C181C51B400F9584B /* LJFriendViewController.xib in Resources */,
 				555ACD12181ACACC00E2E030 /* InfoPlist.strings in Resources */,
 				555ACD1A181ACACC00E2E030 /* Images.xcassets in Resources */,
 				2A3DF4BD181ADD1100723574 /* LJDefaultViewController.xib in Resources */,
@@ -289,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B7227B181C51B400F9584B /* LJFriendViewController.m in Sources */,
+				55B7227F181C52AB00F9584B /* LJTableViewCell.m in Sources */,
 				2A3DF4BC181ADD1100723574 /* LJDefaultViewController.m in Sources */,
 				555ACD18181ACACC00E2E030 /* LJAppDelegate.m in Sources */,
 				555ACD14181ACACC00E2E030 /* main.m in Sources */,
@@ -415,6 +431,7 @@
 					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
+					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F'13/98-222\\ iOS\\ Programming/Logger/Logger",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -432,6 +449,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
