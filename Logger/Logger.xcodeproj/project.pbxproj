@@ -30,7 +30,7 @@
 		555ACD45181AD37800E2E030 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD44181AD37800E2E030 /* SystemConfiguration.framework */; };
 		555ACD47181AD49300E2E030 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD46181AD49300E2E030 /* CoreLocation.framework */; };
 		555ACD49181AD4A100E2E030 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */; };
-		555ACD4B181AE4BD00E2E030 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD4A181AE4BD00E2E030 /* Parse.framework */; };
+		556242E8181B5982002735DE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556242E7181B5982002735DE /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +72,7 @@
 		555ACD44181AD37800E2E030 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		555ACD46181AD49300E2E030 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		555ACD4A181AE4BD00E2E030 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		556242E7181B5982002735DE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 				555ACD43181AD37100E2E030 /* StoreKit.framework in Frameworks */,
 				555ACD41181AD36B00E2E030 /* Security.framework in Frameworks */,
 				555ACD3F181AD36400E2E030 /* QuartzCore.framework in Frameworks */,
-				555ACD4B181AE4BD00E2E030 /* Parse.framework in Frameworks */,
+				556242E8181B5982002735DE /* Parse.framework in Frameworks */,
 				555ACD3D181AD35F00E2E030 /* libz.1.1.3.dylib in Frameworks */,
 				555ACD0A181ACACC00E2E030 /* CoreGraphics.framework in Frameworks */,
 				555ACD3B181AD34E00E2E030 /* CFNetwork.framework in Frameworks */,
@@ -131,7 +131,7 @@
 		555ACD06181ACACC00E2E030 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				555ACD4A181AE4BD00E2E030 /* Parse.framework */,
+				556242E7181B5982002735DE /* Parse.framework */,
 				555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */,
 				555ACD46181AD49300E2E030 /* CoreLocation.framework */,
 				555ACD44181AD37800E2E030 /* SystemConfiguration.framework */,
@@ -413,6 +413,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
+					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
+					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F'13/98-222\\ iOS\\ Programming/Logger/Logger",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -430,6 +432,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
+					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F13/98-222\\ iOS\\ Programming/Logger/Logger",
 					"/Users/stephanieyeung/Documents/CMU\\ F'13/98-222\\ iOS\\ Programming/Logger/Logger",
 				);

@@ -8,6 +8,7 @@
 
 #import <Parse/Parse.h>
 #import "LJAppDelegate.h"
+#import "LJDefaultViewController.h"
 
 @implementation LJAppDelegate
 
@@ -16,6 +17,10 @@
     [Parse setApplicationId:@"fOyYrndfhUTraiM1bLWJkG0So3J8fHthG1trMoYD"
                   clientKey:@"cbZ23G15kK2dLR1N1urWJwyTXD1nwTRFULs1LHTi"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    
+    UIViewController *viewController = [[LJDefaultViewController alloc] initWithNibName:@"LJDefaultViewController" bundle:nil];
+    self.window.rootViewController = viewController;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
