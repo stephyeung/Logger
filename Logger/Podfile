@@ -1,2 +1,0 @@
-platform :ios, '6.1'
-pod 'DSLCalendarView', '~> 0.0.1'
