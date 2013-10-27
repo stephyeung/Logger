@@ -1,0 +1,10 @@
+PODS:
+  - DSLCalendarView (0.0.1)
+
+DEPENDENCIES:
+  - DSLCalendarView (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  DSLCalendarView: 4baa34bb796a716df488f23c00b3eaeff459d1f4
+
+COCOAPODS: 0.27.1
