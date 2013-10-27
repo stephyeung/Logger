@@ -1,0 +1,16 @@
+PODS:
+  - DSLCalendarView (0.0.1)
+  - Facebook-iOS-SDK (3.9.0)
+  - Parse (1.2.15):
+    - Facebook-iOS-SDK (~> 3.7)
+
+DEPENDENCIES:
+  - DSLCalendarView (~> 0.0.1)
+  - Parse
+
+SPEC CHECKSUMS:
+  DSLCalendarView: 4baa34bb796a716df488f23c00b3eaeff459d1f4
+  Facebook-iOS-SDK: 5e1416dbdfc17b2620c2ca31c02e6feec042f2c1
+  Parse: 200f5d714e38ed4c74e93d159e6fabaf2ab8d914
+
+COCOAPODS: 0.27.1
