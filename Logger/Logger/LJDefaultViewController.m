@@ -57,6 +57,7 @@
     if (![PFUser currentUser]) {
         // Customize the Log In View Controller
         PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+        logInViewController.delegate = self;
         
         // Create the sign up view controller
         PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
@@ -95,6 +96,16 @@ shouldBeginLogInWithUsername:(NSString *)username
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+// Sent to the delegate when the log in attempt fails.
+- (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {
+    NSLog(@"Failed to log in...");
+}
+
+// Sent to the delegate when the log in screen is dismissed.
+- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark -
@@ -136,6 +147,11 @@ shouldBeginLogInWithUsername:(NSString *)username
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didFailToSignUpWithError:(NSError *)error
 {
     NSLog(@"Failed to sign up...");
+}
+
+// Sent to the delegate when the sign up screen is dismissed.
+- (void)signUpViewControllerDidCancelSignUp:(PFSignUpViewController *)signUpController {
+    NSLog(@"User dismissed the signUpViewController");
 }
 
 @end

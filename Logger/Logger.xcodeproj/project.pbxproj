@@ -30,10 +30,10 @@
 		555ACD45181AD37800E2E030 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD44181AD37800E2E030 /* SystemConfiguration.framework */; };
 		555ACD47181AD49300E2E030 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD46181AD49300E2E030 /* CoreLocation.framework */; };
 		555ACD49181AD4A100E2E030 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */; };
-		557CCE41181C9425000DBA0E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557CCE40181C9425000DBA0E /* Parse.framework */; };
 		55B7227B181C51B400F9584B /* LJFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B72279181C51B400F9584B /* LJFriendViewController.m */; };
 		55B7227C181C51B400F9584B /* LJFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B7227A181C51B400F9584B /* LJFriendViewController.xib */; };
 		55B7227F181C52AB00F9584B /* LJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B7227E181C52AB00F9584B /* LJTableViewCell.m */; };
+		55C11588181CA2DC00DED3CF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C11587181CA2DC00DED3CF /* Parse.framework */; };
 		56043BCEBF2846AB94791B64 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A64508C14A41D4B3117D2A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -77,12 +77,12 @@
 		555ACD44181AD37800E2E030 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		555ACD46181AD49300E2E030 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		557CCE40181C9425000DBA0E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		55B72278181C51B400F9584B /* LJFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFriendViewController.h; sourceTree = "<group>"; };
 		55B72279181C51B400F9584B /* LJFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJFriendViewController.m; sourceTree = "<group>"; };
 		55B7227A181C51B400F9584B /* LJFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJFriendViewController.xib; sourceTree = "<group>"; };
 		55B7227D181C52AB00F9584B /* LJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTableViewCell.h; sourceTree = "<group>"; };
 		55B7227E181C52AB00F9584B /* LJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTableViewCell.m; sourceTree = "<group>"; };
+		55C11587181CA2DC00DED3CF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		72A64508C14A41D4B3117D2A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,7 @@
 				555ACD0A181ACACC00E2E030 /* CoreGraphics.framework in Frameworks */,
 				555ACD3B181AD34E00E2E030 /* CFNetwork.framework in Frameworks */,
 				555ACD39181AD34A00E2E030 /* AudioToolbox.framework in Frameworks */,
-				557CCE41181C9425000DBA0E /* Parse.framework in Frameworks */,
+				55C11588181CA2DC00DED3CF /* Parse.framework in Frameworks */,
 				555ACD0C181ACACC00E2E030 /* UIKit.framework in Frameworks */,
 				555ACD08181ACACC00E2E030 /* Foundation.framework in Frameworks */,
 				56043BCEBF2846AB94791B64 /* libPods.a in Frameworks */,
@@ -144,7 +144,7 @@
 		555ACD06181ACACC00E2E030 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				557CCE40181C9425000DBA0E /* Parse.framework */,
+				55C11587181CA2DC00DED3CF /* Parse.framework */,
 				555ACD48181AD4A100E2E030 /* MobileCoreServices.framework */,
 				555ACD46181AD49300E2E030 /* CoreLocation.framework */,
 				555ACD44181AD37800E2E030 /* SystemConfiguration.framework */,
