@@ -14,5 +14,5 @@
 - (IBAction)selectPartner:(id)sender;
 - (IBAction)logHours:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *selectPartnerButton;
-
+- (IBAction)logoutButton:(id)sender;
 @end

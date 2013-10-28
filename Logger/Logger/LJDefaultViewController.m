@@ -204,4 +204,8 @@ shouldBeginLogInWithUsername:(NSString *)username
     NSLog(@"User dismissed the signUpViewController");
 }
 
+- (IBAction)logoutButton:(id)sender
+{
+    [PFUser logOut];
+}
 @end

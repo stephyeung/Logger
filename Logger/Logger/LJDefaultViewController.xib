@@ -64,6 +64,19 @@
                         <action selector="logHours:" destination="-1" eventType="touchUpInside" id="Fij-Jq-jKR"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKC-BV-6ij">
+                    <rect key="frame" x="85" y="426" width="150" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                    <state key="normal" title="Logout">
+                        <color key="titleColor" red="0.3214033093" green="0.8173828125" blue="0.66455310639999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="logHours:" destination="-1" eventType="touchUpInside" id="AG9-55-QmE"/>
+                        <action selector="logoutButton:" destination="-1" eventType="touchUpInside" id="rkB-al-mtZ"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4m-VN-yFc">
                     <rect key="frame" x="178" y="230" width="122" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
