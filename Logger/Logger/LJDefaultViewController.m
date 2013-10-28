@@ -57,12 +57,14 @@
     if (!partner) {
         self.partnerHours.hidden = YES;
         self.selectPartnerButton.hidden = NO;
-    } else {
+    }
+    [partner fetchIfNeededInBackgroundWithBlock:^(PFObject *object, NSError *error) {
         self.partnerHours.hidden = NO;
         self.selectPartnerButton.hidden = YES;
         [self displayPartnerHours:partner];
+
+    }];
     }
-}
 
 - (void)displayUserHours
 {
