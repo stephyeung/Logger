@@ -55,8 +55,21 @@
     PFUser *currentUser = [PFUser currentUser];
     PFUser *partner = [currentUser objectForKey:@"partner"];
     if (!partner) {
-        self.partnerHours.hidden = YES;
-        self.selectPartnerButton.hidden = NO;
+        PFQuery *query = [PFUser query];
+        [query whereKey:@"partner" equalTo:currentUser];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            if (objects.count > 0) {
+                currentUser[@"partner"] = [objects objectAtIndex:0];
+                [currentUser saveInBackground];
+                self.partnerHours.hidden = NO;
+                self.selectPartnerButton.hidden = YES;
+                [self displayPartnerHours:partner];
+            }
+            else {
+                self.partnerHours.hidden = YES;
+                self.selectPartnerButton.hidden = NO;
+            }
+        }];
     }
     [partner fetchIfNeededInBackgroundWithBlock:^(PFObject *object, NSError *error) {
         self.partnerHours.hidden = NO;
