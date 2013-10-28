@@ -50,9 +50,13 @@ static NSString * const cellIdentifier = @"LJTableViewCell";
 - (void)selectPressed:(id)sender
 {
     PFUser *currentUser = [PFUser currentUser];
-    currentUser[@"partner"] = self.selectedPartner;
-    [currentUser saveInBackground];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (!currentUser[@"partner"]) {
+        currentUser[@"partner"] = self.selectedPartner;
+        [currentUser saveInBackground];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self tableViewDidRequestRefresh];
+    }
 }
 
 - (void)viewDidLoad
