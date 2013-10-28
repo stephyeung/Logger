@@ -37,6 +37,8 @@ static NSString * const cellIdentifier = @"LJTableViewCell";
 - (void)loadUsers
 {
     PFQuery *query = [[self class] queryForTable];
+    [query whereKey:@"partner" equalTo:[NSNull null]];
+    [query whereKey:@"objectId" notEqualTo:[PFUser currentUser].objectId];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         self.users = objects;
         [self.refreshControl endRefreshing];
@@ -53,6 +55,9 @@ static NSString * const cellIdentifier = @"LJTableViewCell";
     if (!currentUser[@"partner"]) {
         currentUser[@"partner"] = self.selectedPartner;
         [currentUser saveInBackground];
+        PFUser *partner = [currentUser objectForKey:@"partner"];
+        partner[@"partner"] = currentUser;
+        [partner saveInBackground];
         [self dismissViewControllerAnimated:YES completion:nil];
     } else {
         [self tableViewDidRequestRefresh];
