@@ -63,8 +63,8 @@
     [currentUser setObject:[NSNumber numberWithInt:totalHours] forKey:@"hours"];
     [currentUser saveInBackground];
     LJDefaultViewController *defaultVC = [[LJDefaultViewController alloc] initWithNibName:@"LJDefaultViewController" bundle:nil];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:defaultVC];
-    [self presentViewController:navController animated:YES completion:nil];
+    //UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:defaultVC];
+    [self presentViewController:defaultVC animated:YES completion:nil];
 }
 
 @end

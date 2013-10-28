@@ -89,31 +89,35 @@
 - (IBAction)logHours:(id)sender
 {
     LJLogHoursViewController *logHoursVC = [[LJLogHoursViewController alloc] initWithNibName:@"LJLogHoursViewController" bundle:nil];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:logHoursVC];
-    [self presentViewController:navController animated:YES completion:nil];
+    // UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:logHoursVC];
+    [self presentViewController:logHoursVC animated:YES completion:nil];
 }
 
 /*****************************************************************
  *                          LOGIN VIEW                           *
  *****************************************************************/
 
+- (void) presentSignIn {
+    // Customize the Log In View Controller
+    PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+    logInViewController.delegate = self;
+    
+    // Create the sign up view controller
+    PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+    [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+    
+    // Assign our sign up controller to be displayed from the login controller
+    [logInViewController setSignUpController:signUpViewController];
+    
+    // Present the log in view controller
+    [self presentViewController:logInViewController animated:YES completion:nil];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     if (![PFUser currentUser]) {
-        // Customize the Log In View Controller
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        logInViewController.delegate = self;
-        
-        // Create the sign up view controller
-        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
-        
-        // Assign our sign up controller to be displayed from the login controller
-        [logInViewController setSignUpController:signUpViewController];
-        
-        // Present the log in view controller
-        [self presentViewController:logInViewController animated:YES completion:nil];
+        [self presentSignIn];
     }
     else {
         [self populateDataForUser];
@@ -209,5 +213,6 @@ shouldBeginLogInWithUsername:(NSString *)username
 - (IBAction)logoutButton:(id)sender
 {
     [PFUser logOut];
+    [self presentSignIn];
 }
 @end
