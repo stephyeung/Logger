@@ -9,6 +9,7 @@
 #import <Parse/Parse.h>
 #import "LJDefaultViewController.h"
 #import "LJFriendViewController.h"
+#import "LJLogHoursViewController.h"
 
 @interface LJDefaultViewController () <PFLogInViewControllerDelegate,
                                         PFSignUpViewControllerDelegate>
@@ -85,7 +86,9 @@
 
 - (IBAction)logHours:(id)sender
 {
-
+    LJLogHoursViewController *logHoursVC = [[LJLogHoursViewController alloc] initWithNibName:@"LJLogHoursViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:logHoursVC];
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 /*****************************************************************

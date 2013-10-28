@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LJLogHoursViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (strong, nonatomic) IBOutlet UITextField *numberOfHours;
+- (IBAction)submitHours:(id)sender;
 @end
