@@ -13,5 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *partnerHours;
 - (IBAction)selectPartner:(id)sender;
 - (IBAction)logHours:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *selectPartnerButton;
 
 @end

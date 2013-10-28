@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2A3DF4BC181ADD1100723574 /* LJDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3DF4BA181ADD1100723574 /* LJDefaultViewController.m */; };
 		2A3DF4BD181ADD1100723574 /* LJDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3DF4BB181ADD1100723574 /* LJDefaultViewController.xib */; };
+		2A9734B0181E085000808CB0 /* LJLogHoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9734AE181E085000808CB0 /* LJLogHoursViewController.m */; };
+		2A9734B1181E085000808CB0 /* LJLogHoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9734AF181E085000808CB0 /* LJLogHoursViewController.xib */; };
 		555ACD08181ACACC00E2E030 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD07181ACACC00E2E030 /* Foundation.framework */; };
 		555ACD0A181ACACC00E2E030 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD09181ACACC00E2E030 /* CoreGraphics.framework */; };
 		555ACD0C181ACACC00E2E030 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555ACD0B181ACACC00E2E030 /* UIKit.framework */; };
@@ -52,6 +54,9 @@
 		2A3DF4B9181ADD1100723574 /* LJDefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJDefaultViewController.h; sourceTree = "<group>"; };
 		2A3DF4BA181ADD1100723574 /* LJDefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJDefaultViewController.m; sourceTree = "<group>"; };
 		2A3DF4BB181ADD1100723574 /* LJDefaultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJDefaultViewController.xib; sourceTree = "<group>"; };
+		2A9734AD181E085000808CB0 /* LJLogHoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJLogHoursViewController.h; sourceTree = "<group>"; };
+		2A9734AE181E085000808CB0 /* LJLogHoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJLogHoursViewController.m; sourceTree = "<group>"; };
+		2A9734AF181E085000808CB0 /* LJLogHoursViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJLogHoursViewController.xib; sourceTree = "<group>"; };
 		555ACD04181ACACC00E2E030 /* Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Logger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		555ACD07181ACACC00E2E030 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		555ACD09181ACACC00E2E030 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -171,6 +176,9 @@
 				2A3DF4B9181ADD1100723574 /* LJDefaultViewController.h */,
 				2A3DF4BA181ADD1100723574 /* LJDefaultViewController.m */,
 				55B7227D181C52AB00F9584B /* LJTableViewCell.h */,
+				2A9734AD181E085000808CB0 /* LJLogHoursViewController.h */,
+				2A9734AE181E085000808CB0 /* LJLogHoursViewController.m */,
+				2A9734AF181E085000808CB0 /* LJLogHoursViewController.xib */,
 				55B7227E181C52AB00F9584B /* LJTableViewCell.m */,
 				55B72278181C51B400F9584B /* LJFriendViewController.h */,
 				55B72279181C51B400F9584B /* LJFriendViewController.m */,
@@ -293,6 +301,7 @@
 				555ACD12181ACACC00E2E030 /* InfoPlist.strings in Resources */,
 				555ACD1A181ACACC00E2E030 /* Images.xcassets in Resources */,
 				2A3DF4BD181ADD1100723574 /* LJDefaultViewController.xib in Resources */,
+				2A9734B1181E085000808CB0 /* LJLogHoursViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55B7227B181C51B400F9584B /* LJFriendViewController.m in Sources */,
+				2A9734B0181E085000808CB0 /* LJLogHoursViewController.m in Sources */,
 				55B7227F181C52AB00F9584B /* LJTableViewCell.m in Sources */,
 				2A3DF4BC181ADD1100723574 /* LJDefaultViewController.m in Sources */,
 				555ACD18181ACACC00E2E030 /* LJAppDelegate.m in Sources */,

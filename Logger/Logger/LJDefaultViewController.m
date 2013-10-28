@@ -44,7 +44,48 @@
     [self presentViewController:navController animated:YES completion:nil];
 }
 
-- (IBAction)logHours:(id)sender {
+- (void)displayPartnerHours:(PFUser *)user {
+    int hours = [[user objectForKey:@"hours"] intValue];
+    self.partnerHours.text = [NSString stringWithFormat:@"%d", hours];
+}
+
+- (void)userHasPartner
+{
+    PFUser *currentUser = [PFUser currentUser];
+    PFUser *partner = [currentUser objectForKey:@"partner"];
+    if (!partner) {
+        self.partnerHours.hidden = YES;
+        self.selectPartnerButton.hidden = NO;
+    } else {
+        self.partnerHours.hidden = NO;
+        self.selectPartnerButton.hidden = YES;
+        [self displayPartnerHours:partner];
+    }
+}
+
+- (void)displayUserHours
+{
+    PFUser *currentUser = [PFUser currentUser];
+    int hours = [[currentUser objectForKey:@"hours"] intValue];
+    self.myHours.text = [NSString stringWithFormat:@"%d", hours];
+}
+
+- (void)populateDataForUser
+{
+    [self userHasPartner];
+    [self displayUserHours];
+}
+
+- (void)setUserData
+{
+    PFUser *currentUser = [PFUser currentUser];
+    [currentUser setObject:[NSNumber numberWithInt:0] forKey:@"hours"];
+    [currentUser saveInBackground];
+}
+
+- (IBAction)logHours:(id)sender
+{
+
 }
 
 /*****************************************************************
@@ -96,6 +137,7 @@ shouldBeginLogInWithUsername:(NSString *)username
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self populateDataForUser];
 }
 
 // Sent to the delegate when the log in attempt fails.
@@ -141,6 +183,8 @@ shouldBeginLogInWithUsername:(NSString *)username
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user
 {
     [self dismissViewControllerAnimated:YES completion:nil]; // Dismiss the PFSignUpViewController
+    [self populateDataForUser];
+    [self setUserData];
 }
 
 // Sent to the delegate when the sign up attempt fails.
