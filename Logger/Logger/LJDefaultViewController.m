@@ -113,6 +113,9 @@
         // Present the log in view controller
         [self presentViewController:logInViewController animated:YES completion:nil];
     }
+    else {
+        [self populateDataForUser];
+    }
 }
 
 #pragma mark -

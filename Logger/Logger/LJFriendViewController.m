@@ -11,6 +11,7 @@
 
 @interface LJFriendViewController ()
 @property (nonatomic, strong) NSArray *users;
+@property (nonatomic, strong) PFUser *selectedPartner;
 @end
 
 @implementation LJFriendViewController
@@ -48,6 +49,9 @@ static NSString * const cellIdentifier = @"LJTableViewCell";
 }
 - (void)selectPressed:(id)sender
 {
+    PFUser *currentUser = [PFUser currentUser];
+    currentUser[@"partner"] = self.selectedPartner;
+    [currentUser saveInBackground];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -103,6 +107,11 @@ static NSString * const cellIdentifier = @"LJTableViewCell";
     NSString *username = [user objectForKey:@"username"];
     cell.textLabel.text = username;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedPartner = self.users[indexPath.row];
 }
 
 /*
